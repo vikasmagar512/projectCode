@@ -1,0 +1,78 @@
+/*      light colors         */
+.service-with-create {
+  border-bottom: 1px #ededed solid;
+  padding: 4px 0; }
+  .service-with-create .dropdown-menu {
+    width: fit-content;
+    min-width: 100%;
+    border-radius: 4px;
+    max-height: 176px;
+    overflow-y: scroll; }
+    .service-with-create .dropdown-menu .add-new-service {
+      position: sticky;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      background: white; }
+  .service-with-create .dropdown-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px transparent solid; }
+    .service-with-create .dropdown-toggle .input-no-border {
+      border: none; }
+    .service-with-create .dropdown-toggle p {
+      font-size: 14px; }
+    .service-with-create .dropdown-toggle:hover, .service-with-create .dropdown-toggle:focus {
+      background-color: transparent;
+      border-color: #f68b1e; }
+  .service-with-create.open .dropdown-toggle {
+    box-shadow: 0;
+    background-color: transparent;
+    border-color: #f68b1e; }
+    .service-with-create.open .dropdown-toggle:hover, .service-with-create.open .dropdown-toggle:focus {
+      box-shadow: 0;
+      background-color: transparent;
+      border-color: #f68b1e; }
+  .service-with-create .create-service-form .create-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 8px; }
+    .service-with-create .create-service-form .create-form-header span {
+      font-size: 16px;
+      font-weight: 600;
+      color: #6d8994; }
+    .service-with-create .create-service-form .create-form-header i {
+      font-size: 14px;
+      color: #6d8994;
+      cursor: pointer; }
+  .service-with-create .create-service-form form {
+    margin: 0; }
+    .service-with-create .create-service-form form .input-forms {
+      padding: 0 8px; }
+    .service-with-create .create-service-form form select,
+    .service-with-create .create-service-form form input {
+      width: 100%;
+      font-size: 14px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #999;
+      margin: 4px 0;
+      padding: 6px 8px !important; }
+      .service-with-create .create-service-form form select::placeholder,
+      .service-with-create .create-service-form form input::placeholder {
+        color: #ccc; }
+    .service-with-create .create-service-form form .create-servie-btn {
+      width: 100%;
+      background-color: #4986c5;
+      color: white;
+      border: none;
+      font-size: 16px;
+      padding: 6px 0;
+      margin-top: 20px; }
+    .service-with-create .create-service-form form input[type='number']::-webkit-inner-spin-button,
+    .service-with-create .create-service-form form input[type='number']::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }

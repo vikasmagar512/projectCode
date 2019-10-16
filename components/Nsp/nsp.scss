@@ -1,0 +1,49 @@
+@import '../../assets/sass/common.scss';
+
+.nsp-component {
+	@extend .flex-row;
+	justify-content: flex-start;
+	align-items: center;
+
+	.arrow-status {
+		width: 12px;
+		height: 20px;
+		margin-right: 8px;
+	}
+	.region-icon {
+		height: 32px;
+		max-width: 56px;
+	}
+	.nsp-name {
+		font-size: 13px;
+		margin-bottom: 4px;
+	}
+	.nsp-values {
+		font-size: 14px;
+	}
+	.more {
+		font-size: 14px;
+		font-weight: normal;
+		text-align: left;
+		padding-top: 8px;
+		cursor: pointer;
+	}
+	.unit {
+		color: #abb1b2;
+	}
+	.divider {
+		width: 1px;
+		background-color: #eaeaea;
+
+		&.small {
+			margin-left: 14px;
+			margin-right: 14px;
+		}
+
+		&.big {
+			margin-left: 20px;
+			margin-right: 20px;
+			height: 40px;
+		}
+	}
+}

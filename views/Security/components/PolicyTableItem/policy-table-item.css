@@ -1,0 +1,338 @@
+.flex-row, .centered-row, .policy-table-item.item .field__nsp .primary-container, .policy-table-item.item .field__info .policyinfo__time-container {
+  display: flex;
+  flex-direction: row; }
+
+.flex-column, .policy-table-item.item .field__status .statusinfo, .policy-table-item.item .field__info .policyinfo {
+  display: flex;
+  flex-direction: column; }
+
+.flex-column-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.centered-row {
+  align-items: center; }
+
+.stretch {
+  flex: 1;
+  justify-content: space-between; }
+
+.baseline {
+  align-items: baseline; }
+
+.center {
+  align-items: center; }
+
+.space-left {
+  margin-left: 16px; }
+
+.space-above {
+  margin-top: 16px; }
+
+.space-above-8 {
+  margin-top: 8px; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.component-coming-soon.hidden {
+  visibility: collapse; }
+
+.table-item, .policy-table-item.item {
+  background-color: white;
+  border-radius: 4px;
+  border: 0.5px solid #ebebeb;
+  padding: 24px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  @media only screen and (max-width: 992px) {
+    .table-item, .policy-table-item.item {
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px; } }
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  min-height: 75vh; }
+  .coming-soon img {
+    width: 512px; }
+    @media only screen and (max-width: 992px) {
+      .coming-soon img {
+        width: 320px; } }
+
+.component-coming-soon {
+  opacity: 0.33 !important; }
+  .component-coming-soon * {
+    pointer-events: none; }
+
+@keyframes slideLeftAndRight {
+  0% {
+    transform: translateX(0); }
+  25% {
+    transform: translateX(-20px); }
+  50% {
+    transform: translateX(0); }
+  75% {
+    transform: translateX(20px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; }
+  100% {
+    opacity: 1; } }
+
+.animate-flicker {
+  animation-duration: 1.5s;
+  animation-name: flickerAnimation;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out; }
+
+.slow-shake {
+  animation-duration: 1.5s;
+  animation-name: slideLeftAndRight;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out; }
+
+/*      light colors         */
+.policy-table-item.item {
+  position: relative;
+  align-items: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+  .policy-table-item.item.active {
+    border: 1px solid #4986c5; }
+  @media only screen and (max-width: 992px) {
+    .policy-table-item.item {
+      padding-bottom: 32px; } }
+  .policy-table-item.item .policy__counter {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #4986c5;
+    border-radius: 12px;
+    top: -10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .policy-table-item.item .policy__counter span {
+      color: white;
+      font-size: 12px;
+      line-height: 1;
+      margin: 0; }
+  .policy-table-item.item .field {
+    flex: 1;
+    align-content: center;
+    font-size: 12px;
+    color: #a1a1a1; }
+    @media only screen and (max-width: 992px) {
+      .policy-table-item.item .field {
+        width: 100%;
+        flex: auto;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center;
+        display: flex;
+        margin-bottom: 12px; }
+        .policy-table-item.item .field__title {
+          font-weight: bold;
+          font-size: 12px;
+          text-transform: uppercase; }
+        .policy-table-item.item .field__content {
+          display: flex;
+          align-items: center; }
+        .policy-table-item.item .field__actions .field__content {
+          flex-direction: column; } }
+    .policy-table-item.item .field p,
+    .policy-table-item.item .field span {
+      color: #6d8994; }
+      .policy-table-item.item .field p.grayish,
+      .policy-table-item.item .field span.grayish {
+        color: #abb1b2; }
+      .policy-table-item.item .field p.small,
+      .policy-table-item.item .field span.small {
+        font-size: 10px; }
+        @media only screen and (max-width: 992px) {
+          .policy-table-item.item .field p.small,
+          .policy-table-item.item .field span.small {
+            font-size: 12px; } }
+      .policy-table-item.item .field p.medium,
+      .policy-table-item.item .field span.medium {
+        font-size: 12px; }
+      .policy-table-item.item .field p.normal,
+      .policy-table-item.item .field span.normal {
+        font-size: 14px; }
+      .policy-table-item.item .field p.strong,
+      .policy-table-item.item .field span.strong {
+        font-weight: bold; }
+    .policy-table-item.item .field__status .statusinfo {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      @media only screen and (max-width: 992px) {
+        .policy-table-item.item .field__status .statusinfo {
+          align-items: flex-end; } }
+      .policy-table-item.item .field__status .statusinfo .text {
+        margin-bottom: 8px; }
+      .policy-table-item.item .field__status .statusinfo .space-above-8 {
+        margin-top: 8px; }
+    .policy-table-item.item .field__profile {
+      display: flex; }
+    .policy-table-item.item .field__nsp .nsp-text {
+      margin-bottom: 16px; }
+      .policy-table-item.item .field__nsp .nsp-text-secondary {
+        margin-top: 16px; }
+    .policy-table-item.item .field__nsp .field__content {
+      flex-direction: column; }
+    .policy-table-item.item .field__nsp .primary-container {
+      justify-content: flex-start;
+      align-items: center; }
+      .policy-table-item.item .field__nsp .primary-container .arrow-status {
+        width: 12px;
+        height: 20px;
+        margin-right: 8px; }
+      .policy-table-item.item .field__nsp .primary-container .region-icon {
+        height: 32px;
+        max-width: 56px; }
+      .policy-table-item.item .field__nsp .primary-container .nsp-name {
+        margin-bottom: 4px; }
+    .policy-table-item.item .field__nsp .more {
+      font-size: 12px;
+      font-weight: normal;
+      text-align: left;
+      padding-top: 8px;
+      cursor: pointer; }
+    .policy-table-item.item .field__nsp .unit {
+      color: #abb1b2; }
+    .policy-table-item.item .field__nsp .divider {
+      width: 1px;
+      background-color: #eaeaea; }
+      .policy-table-item.item .field__nsp .divider.small {
+        margin-left: 4px;
+        margin-right: 4px; }
+      .policy-table-item.item .field__nsp .divider.big {
+        margin-left: 12px;
+        margin-right: 12px;
+        height: 40px; }
+    .policy-table-item.item .field__info .policyinfo {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center; }
+      @media only screen and (max-width: 992px) {
+        .policy-table-item.item .field__info .policyinfo {
+          align-items: flex-end; } }
+      .policy-table-item.item .field__info .policyinfo__button {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        background-color: #f8fdff;
+        color: #6d8994;
+        border: 0.5px #c5d4e2 solid;
+        border-radius: 4px;
+        padding: 8px 12px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0px 5px 10px -2px rgba(136, 136, 136, 0.1); }
+        .policy-table-item.item .field__info .policyinfo__button img {
+          margin-left: 8px; }
+        .policy-table-item.item .field__info .policyinfo__button .button__text {
+          width: 72px;
+          text-overflow: hidden;
+          white-space: nowrap;
+          overflow: hidden; }
+        .policy-table-item.item .field__info .policyinfo__button:hover {
+          box-shadow: 0px 5px 10px -2px rgba(136, 136, 136, 0.2); }
+      .policy-table-item.item .field__info .policyinfo__title {
+        color: #6d8994;
+        white-space: nowrap;
+        max-width: 192px;
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        font-size: 16px; }
+      .policy-table-item.item .field__info .policyinfo__time-container {
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px; }
+        .policy-table-item.item .field__info .policyinfo__time-container .divider {
+          height: 14px;
+          width: 1px;
+          margin-left: 8px;
+          margin-right: 8px;
+          background-color: #eaeaea; }
+        .policy-table-item.item .field__info .policyinfo__time-container img {
+          margin-right: 8px; }
+    .policy-table-item.item .field__source, .policy-table-item.item .field__destination {
+      text-align: start; }
+    .policy-table-item.item .field__service, .policy-table-item.item .field__application {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column; }
+      .policy-table-item.item .field__service .single-service,
+      .policy-table-item.item .field__service .single-application, .policy-table-item.item .field__application .single-service,
+      .policy-table-item.item .field__application .single-application {
+        min-height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 8px; }
+    .policy-table-item.item .field__status {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      .policy-table-item.item .field__status .status-text-container img {
+        margin-right: 8px; }
+    .policy-table-item.item .field__actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .policy-table-item.item .field__actions .action {
+        display: flex;
+        align-items: center; }
+    .policy-table-item.item .field__expand {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      cursor: pointer;
+      margin-bottom: 0px; }
+      .policy-table-item.item .field__expand i {
+        font-size: 24px; }
+    .policy-table-item.item .field__edit {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      cursor: pointer;
+      margin-bottom: 0px; }
+      .policy-table-item.item .field__edit img {
+        width: 20px;
+        height: 20px; }
+      .policy-table-item.item .field__edit i {
+        font-size: 21px;
+        margin-left: 2px;
+        margin-top: 10px; }
+  .policy-table-item.item .action-index--image {
+    width: 14px;
+    margin-right: 5px; }
+  .policy-table-item.item .small-icon {
+    height: 20px;
+    width: 20px;
+    margin: 0; }
+  .policy-table-item.item .tiny-icon {
+    width: 8px;
+    height: 8px;
+    margin: 0; }

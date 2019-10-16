@@ -1,0 +1,279 @@
+@import '../../../../assets/sass/common.scss';
+
+.reports-table-item {
+	&.item {
+		&.hover {
+			.field {
+				&__stats {
+					opacity: 1;
+					transition: 300ms ease;
+				}
+
+				&__source,
+				&__destination {
+					& .imgDiv {
+						opacity: 1;
+						transition: 300ms ease;
+					}
+				}
+			}
+		}
+
+		@extend .table-item;
+		align-items: flex-start;
+
+		p {
+			word-break: break-all;
+		}
+
+		.vertical-divider {
+			width: 1px;
+			background-color: #dedede;
+
+			&--big {
+				height: 40px;
+				margin-right: 0;
+			}
+		}
+
+		.field {
+			flex: 1;
+			align-content: center;
+			font-size: 12px;
+			color: #6d8994;
+			padding-right: 10px;
+			@media only screen and (max-width: 992px) {
+				width: 100%;
+				flex: auto;
+				flex-direction: row !important;
+				justify-content: space-between !important;
+				align-items: center;
+				display: flex;
+				margin-bottom: 12px;
+				&__title {
+					font-weight: bold;
+					font-size: 12px;
+					text-transform: uppercase;
+				}
+
+				&__content {
+					display: flex;
+					align-items: center;
+				}
+
+				&__actions {
+					.field__content {
+						flex-direction: column;
+					}
+				}
+			}
+
+			p {
+				font-weight: 600;
+
+				/*&.medium {
+            font-size: 14px;
+        }*/
+
+				&.normal {
+					font-size: 16px;
+				}
+
+				&.strong {
+					font-weight: bold;
+				}
+
+				&.top {
+					margin-bottom: 5px;
+				}
+			}
+
+			.small {
+				font-size: 12px;
+				@media only screen and (max-width: 992px) {
+					font-size: 12px;
+				}
+			}
+
+			.light {
+				font-weight: normal;
+			}
+
+			.medium {
+				font-size: 14px;
+			}
+
+			&__policy {
+				display: flex;
+				flex-direction: column;
+
+				& .timezone {
+					& .marTop {
+						margin-top: 2px;
+					}
+				}
+
+				& .ips {
+					display: flex;
+					align-items: baseline;
+
+					& .left {
+						width: 30%;
+						text-align: right;
+					}
+
+					& .time {
+						padding-left: 5px;
+					}
+				}
+
+				& .imgDiv {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+
+					p {
+						margin-left: 5px;
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			&__alert {
+				display: flex;
+				justify-content: flex-start;
+			}
+
+			&__source,
+			&__destination {
+				flex: 1.25 0;
+				& .fqdn {
+					align-items: flex-end;
+					margin-top: 15px;
+					p {
+						font-weight: normal;
+					}
+				}
+
+				& .imgDiv {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					opacity: 0.5;
+					margin-top: 15px;
+
+					& .imageP {
+						margin-right: 5px;
+						padding-top: 5px;
+
+						& .code {
+							margin-left: 4px;
+						}
+					}
+
+					& .top {
+						margin-left: 5px;
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			&__service,
+			&__application {
+				text-transform: capitalize;
+				display: flex;
+				align-items: center;
+			}
+
+			&__alert {
+				display: flex;
+				align-items: center;
+			}
+
+			&__actions {
+				display: flex;
+				flex-direction: column;
+				flex: 0.75 0;
+
+				.action {
+					display: flex;
+					align-items: center;
+				}
+			}
+
+			&__service,
+			&__application,
+			&__actions,
+			&__alert {
+				margin-top: -2px;
+			}
+
+			&__stats {
+				display: flex;
+				flex-direction: column;
+				flex: 1.5 0;
+				opacity: 0.5;
+
+				& .marBottom {
+					margin-bottom: 5px;
+				}
+
+				.divider {
+					justify-content: center;
+					flex-direction: row;
+
+					.line {
+						align-items: center;
+						justify-content: center;
+						display: flex;
+						width: 2px;
+						margin-right: 5px;
+						margin-left: 3px;
+					}
+
+					.bytes {
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+						flex: 1 1;
+						padding-right: 1px;
+
+						img {
+							width: 16px;
+							height: 16px;
+						}
+
+						&.bottom {
+							align-self: center;
+						}
+						p {
+							white-space: pre-wrap;
+							word-break: keep-all;
+						}
+					}
+				}
+			}
+
+			& .fakeCenter {
+				margin-left: 25%;
+			}
+		}
+
+		.small-icon {
+			height: 20px;
+			width: 20px;
+			margin: 0px 4px 0px 0px;
+		}
+
+		.drop-icon {
+			height: 12px;
+			width: 9px;
+			margin: 0px 4px 0px 0px;
+		}
+
+		.secondRow {
+			margin-top: 10px;
+			display: flex;
+		}
+	}
+}

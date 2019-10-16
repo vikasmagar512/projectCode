@@ -1,0 +1,88 @@
+@import '../../assets/sass/common.scss';
+@import '../../assets/sass/lbd/variables.scss';
+@import '../../assets/sass/lbd/mixins/vendor-prefixes';
+
+.customers-form-page {
+	&--content {
+		display: flex;
+		position: relative;
+		z-index: 4;
+		padding-top: 100px;
+		justify-content: center;
+
+		@media only screen and (max-width: 992px) {
+			padding-top: 32px;
+		}
+
+		.title {
+			font-size: 26px;
+			font-weight: 400;
+			color: $wedge-blue-gray;
+			margin: 0 0 24px 0;
+		}
+		.customers-form {
+			width: 400px;
+			margin-bottom: 24px;
+
+			@media only screen and (max-width: 992px) {
+				width: 360px;
+			}
+
+			.customers-container {
+				background-color: white;
+				border: 1px #d0d4d6 solid;
+				border-radius: 3px;
+			}
+
+			.divider {
+				height: 1px;
+				margin: 0 20px;
+				background-color: #d0d4d6;
+			}
+
+			.single-customer {
+				@extend .flex-row;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px;
+				cursor: pointer;
+
+				@include transition(0.3s, $transition-ease);
+
+				&:hover {
+					background-color: lighten(#d0d4d6, 10);
+				}
+
+				.forward-icon {
+					width: 12px;
+					height: 10px;
+					margin-left: 20px;
+				}
+
+				&--name {
+					font-size: 18px;
+					color: $wedge-blue-gray;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+	}
+
+	&--footer {
+		z-index: 1;
+		position: fixed;
+		bottom: 0;
+		.footer--image {
+			background-color: #f9f9f9;
+			width: 100%;
+			object-fit: contain;
+
+			@media only screen and (max-width: 992px) {
+				width: unset;
+				max-height: 50vh;
+			}
+		}
+	}
+}

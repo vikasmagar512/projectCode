@@ -1,0 +1,267 @@
+.flex-row, .centered-row {
+  display: flex;
+  flex-direction: row; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.flex-column-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.centered-row {
+  align-items: center; }
+
+.stretch {
+  flex: 1;
+  justify-content: space-between; }
+
+.baseline {
+  align-items: baseline; }
+
+.center {
+  align-items: center; }
+
+.space-left {
+  margin-left: 16px; }
+
+.space-above {
+  margin-top: 16px; }
+
+.space-above-8 {
+  margin-top: 8px; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.component-coming-soon.hidden {
+  visibility: collapse; }
+
+.table-item {
+  background-color: white;
+  border-radius: 4px;
+  border: 0.5px solid #ebebeb;
+  padding: 24px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  @media only screen and (max-width: 992px) {
+    .table-item {
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px; } }
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  min-height: 75vh; }
+  .coming-soon img {
+    width: 512px; }
+    @media only screen and (max-width: 992px) {
+      .coming-soon img {
+        width: 320px; } }
+
+.component-coming-soon {
+  opacity: 0.33 !important; }
+  .component-coming-soon * {
+    pointer-events: none; }
+
+@keyframes slideLeftAndRight {
+  0% {
+    transform: translateX(0); }
+  25% {
+    transform: translateX(-20px); }
+  50% {
+    transform: translateX(0); }
+  75% {
+    transform: translateX(20px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; }
+  100% {
+    opacity: 1; } }
+
+.animate-flicker {
+  animation-duration: 1.5s;
+  animation-name: flickerAnimation;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out; }
+
+.slow-shake {
+  animation-duration: 1.5s;
+  animation-name: slideLeftAndRight;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out; }
+
+/*      light colors         */
+.select-with-create-object {
+  border-bottom: 1px #ededed solid;
+  padding: 4px 0; }
+  .select-with-create-object .dropdown-menu {
+    width: fit-content;
+    min-width: 100%;
+    border-radius: 4px;
+    transition: none !important;
+    overflow-y: auto;
+    height: auto;
+    max-height: 176px; }
+    .select-with-create-object .dropdown-menu .accordion-wrapper {
+      max-height: 176px;
+      overflow-y: scroll; }
+    .select-with-create-object .dropdown-menu .accordionSection .toggle.header.any {
+      outline: none;
+      background: white;
+      cursor: pointer;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      font-size: 14px;
+      font-weight: 600;
+      width: 100%;
+      color: #6d8994;
+      padding: 5px 15px 10px;
+      border-bottom: 0.02px solid #ededed; }
+      .select-with-create-object .dropdown-menu .accordionSection .toggle.header.any:focus {
+        background-color: #f5f5f5;
+        color: #333333;
+        opacity: 1;
+        text-decoration: none; }
+      .select-with-create-object .dropdown-menu .accordionSection .toggle.header.any:hover {
+        color: #262626;
+        text-decoration: none;
+        background-color: #f5f5f5; }
+    .select-with-create-object .dropdown-menu > li:first-child > a {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .select-with-create-object .dropdown-menu .address-Icon {
+      height: 24px;
+      margin-left: 6px;
+      margin-right: 12px; }
+    .select-with-create-object .dropdown-menu .gateway-Icon {
+      width: 30px;
+      height: 18px;
+      margin-right: 7px; }
+    .select-with-create-object .dropdown-menu .group-Icon {
+      height: 20px;
+      margin-left: 5px;
+      margin-right: 12px; }
+    .select-with-create-object .dropdown-menu .imgContainer {
+      width: 40px;
+      text-align: center;
+      display: inline-block; }
+    .select-with-create-object .dropdown-menu .staticCreate {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #6d8994;
+      background-color: #f7f7f7;
+      height: 30px; }
+      .select-with-create-object .dropdown-menu .staticCreate .add-button {
+        height: 20px;
+        pointer-events: none; }
+    .select-with-create-object .dropdown-menu .accordion-open {
+      cursor: pointer;
+      margin-bottom: 5px; }
+      .select-with-create-object .dropdown-menu .accordion-open:focus {
+        background-color: #f5f5f5;
+        color: #333333;
+        opacity: 1;
+        text-decoration: none; }
+      .select-with-create-object .dropdown-menu .accordion-open:hover {
+        color: #262626;
+        text-decoration: none;
+        background-color: #f5f5f5; }
+    .select-with-create-object .dropdown-menu .createModal {
+      overflow-x: hidden; }
+      .select-with-create-object .dropdown-menu .createModal .headerModal .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 12px 12px 12px; }
+        .select-with-create-object .dropdown-menu .createModal .headerModal .actions i {
+          font-size: 15px;
+          color: #6d8994;
+          cursor: pointer; }
+      .select-with-create-object .dropdown-menu .createModal .headerModal p {
+        padding: 0 15px;
+        font-size: 15px;
+        font-weight: 600; }
+      .select-with-create-object .dropdown-menu .createModal .content {
+        padding: 5px 0px 0px 0px; }
+        .select-with-create-object .dropdown-menu .createModal .content .wedge-menu-item {
+          padding: 10px 10px;
+          border-bottom: 0.02px solid #ededed;
+          cursor: pointer; }
+          .select-with-create-object .dropdown-menu .createModal .content .wedge-menu-item img {
+            height: 15px;
+            width: 15px;
+            margin-right: 5px; }
+          .select-with-create-object .dropdown-menu .createModal .content .wedge-menu-item span {
+            color: #6d8994; }
+          .select-with-create-object .dropdown-menu .createModal .content .wedge-menu-item .gateway-Icon {
+            margin-left: 6px; }
+          .select-with-create-object .dropdown-menu .createModal .content .wedge-menu-item:focus {
+            background-color: #f5f5f5;
+            color: #333333;
+            opacity: 1;
+            text-decoration: none; }
+          .select-with-create-object .dropdown-menu .createModal .content .wedge-menu-item:hover {
+            color: #262626;
+            text-decoration: none;
+            background-color: #f5f5f5; }
+  .select-with-create-object .dropdown-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px transparent solid; }
+    .select-with-create-object .dropdown-toggle .input-no-border {
+      border: none; }
+    .select-with-create-object .dropdown-toggle p {
+      font-size: 14px; }
+    .select-with-create-object .dropdown-toggle:hover, .select-with-create-object .dropdown-toggle:focus {
+      background-color: transparent;
+      border-color: #f68b1e; }
+  .select-with-create-object.open .dropdown-toggle {
+    box-shadow: 0;
+    background-color: transparent;
+    border-color: #f68b1e; }
+    .select-with-create-object.open .dropdown-toggle:hover, .select-with-create-object.open .dropdown-toggle:focus {
+      box-shadow: 0;
+      background-color: transparent;
+      border-color: #f68b1e; }
+  .select-with-create-object .create-new {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px; }
+    .select-with-create-object .create-new .field-error-container {
+      flex: 1; }
+      .select-with-create-object .create-new .field-error-container input {
+        width: 150px; }
+    .select-with-create-object .create-new .save-button {
+      color: #36cb98;
+      font-size: 12px;
+      cursor: pointer; }
+      .select-with-create-object .create-new .save-button:disabled {
+        color: #888;
+        cursor: not-allowed; }
+    .select-with-create-object .create-new .error-text {
+      font-size: 10px;
+      color: red; }
+    .select-with-create-object .create-new .form__textinput {
+      margin: 0 8px 0 0;
+      padding: 2px; }

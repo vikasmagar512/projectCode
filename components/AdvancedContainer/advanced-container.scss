@@ -1,0 +1,41 @@
+@import '../../assets/sass/lbd/variables.scss';
+@import '../../assets/sass/lbd/mixins/vendor-prefixes.scss';
+
+.advanced-container {
+	&--title {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		color: $wedge-secondary-blue !important;
+		span {
+			margin-left: 8px;
+			font-size: 16px;
+		}
+		i {
+			font-size: 24px;
+			font-weight: bold;
+			@include transition(0.3s, $transition-ease);
+
+			&.inverted {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+
+	&--content {
+		padding-top: 20px;
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		@include transition(0.3s, $transition-ease);
+
+		&.visible {
+			overflow: visible;
+			max-height: 300px;
+			opacity: 1;
+			@media (max-width: 993px) {
+				max-height: 700px;
+			}
+		}
+	}
+}

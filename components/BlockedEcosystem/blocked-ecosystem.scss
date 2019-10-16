@@ -1,0 +1,21 @@
+@import '../../assets/sass/lbd/variables.scss';
+
+.ecosystem-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.loader-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	& .block-label {
+		color: $wedge-primary-blue;
+		font-size: 24px;
+	}
+	& .block-desc {
+		color: $wedge-blue-gray;
+	}
+}

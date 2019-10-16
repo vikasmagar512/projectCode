@@ -1,0 +1,45 @@
+@import '../../../../assets/sass/lbd/variables.scss';
+@import '../../../../assets/sass/common.scss';
+
+.add-ecosystem {
+	@extend .flex-column;
+	background-color: white;
+	border: 1px #d0d4d6 dashed;
+	border-radius: 3.8px;
+	margin: 16px;
+	width: 350px;
+	min-height: 300px;
+	cursor: pointer;
+	box-shadow: 0px 5px 10px -2px rgba(136, 136, 136, 0.1);
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+
+	&:hover {
+		box-shadow: 0px 5px 10px -2px rgba(136, 136, 136, 0.3);
+	}
+
+	p {
+		font-size: 22px;
+		margin-top: 16px;
+		color: $wedge-blue-gray;
+	}
+	.oval {
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		border-radius: 27px;
+		width: 52.5px;
+		height: 52.5px;
+		box-shadow: 5px 2.5px 6.5px 6.5px rgba(114, 225, 196, 0.32);
+		background-color: #72e1c4;
+		span {
+			color: white;
+			font-size: 35px;
+			font-weight: bold;
+			text-align: center;
+			width: 100%;
+		}
+	}
+}

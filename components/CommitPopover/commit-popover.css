@@ -1,0 +1,68 @@
+/*      light colors         */
+#popover-commit {
+  width: 280px;
+  max-width: unset;
+  box-shadow: 0 2px 4px 0 #eeeeee;
+  border: solid 0.5px #dadddf; }
+  #popover-commit .arrow {
+    visibility: hidden; }
+  #popover-commit .popover-content {
+    padding: 0; }
+  #popover-commit .commit-list {
+    padding: 25px 20px 10px 20px;
+    max-height: 350px;
+    overflow-y: auto; }
+  #popover-commit .commit-actions {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 1px #ddd solid; }
+    #popover-commit .commit-actions .button {
+      font-size: 18px;
+      font-weight: normal;
+      border-radius: 3px;
+      padding: 8px 32px; }
+    #popover-commit .commit-actions .commit-button {
+      margin-right: 10px;
+      background-color: #4a87c6;
+      border: 1px #4a87c6 solid; }
+    #popover-commit .commit-actions .revert-button {
+      border: 1px #aaaaaa solid;
+      color: #aaaaaa; }
+  #popover-commit .single-commit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px; }
+    #popover-commit .single-commit--user-container {
+      align-items: center;
+      margin-right: 20px; }
+      #popover-commit .single-commit--user-container .user-avatar {
+        border: 1px #ddd solid;
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 6px; }
+      #popover-commit .single-commit--user-container .user-name {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+        color: #6d8994; }
+    #popover-commit .single-commit--details {
+      flex: 1;
+      background-color: white;
+      border-radius: 4px;
+      padding: 8px 12px;
+      box-shadow: 0 2px 4px 0 #eeeeee;
+      border: solid 0.5px #dadddf; }
+      #popover-commit .single-commit--details .details--first-line {
+        font-size: 14px;
+        color: #6d8994; }
+      #popover-commit .single-commit--details .details--second-line .action-name {
+        font-size: 12px;
+        color: #5cc2ea;
+        font-weight: 600; }
+      #popover-commit .single-commit--details .details--second-line .action-details {
+        font-size: 14px;
+        color: #6d8994; }

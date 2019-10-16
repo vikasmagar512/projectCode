@@ -1,0 +1,15 @@
+/*      light colors         */
+.ecosystem-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .ecosystem-block .loader-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .ecosystem-block .block-label {
+    color: #4986c5;
+    font-size: 24px; }
+  .ecosystem-block .block-desc {
+    color: #6d8994; }

@@ -1,0 +1,231 @@
+@import '../../../../assets/sass/lbd/variables.scss';
+@import '../../../../assets/sass/common.scss';
+
+.ecosystem-item {
+	background-color: white;
+	border: 1px #dcdfd2 solid;
+	border-radius: 3.8px;
+	margin: 16px;
+	width: 350px;
+	cursor: pointer;
+	box-shadow: 0px 5px 10px -2px rgba(136, 136, 136, 0.1);
+
+	&.disabled {
+		opacity: 0.6;
+		cursor: default;
+		&:hover {
+			border: 1px #dcdfd2 solid;
+			box-shadow: 0px 5px 10px -2px rgba(136, 136, 136, 0.1);
+		}
+	}
+
+	&:hover {
+		border: 1px #29cc97 solid;
+		box-shadow: 0px 5px 10px -2px rgba(136, 136, 136, 0.3);
+	}
+
+	.item-header {
+		background-color: $wedge-secondary-blue;
+		padding: 16px 24px;
+		min-height: 92px;
+		@extend .flex-row;
+		justify-content: space-between;
+		align-content: flex-start;
+		align-items: flex-start;
+		position: relative;
+		&__caption {
+			width: 100%;
+		}
+		&__uuid {
+			font-size: 12px;
+			font-weight: normal;
+			color: white;
+			opacity: 0.5;
+			margin: 0;
+			text-overflow: ellipsis;
+			width: 250px;
+			white-space: nowrap;
+			overflow: hidden;
+			margin-bottom: 8px;
+		}
+		&__name {
+			line-height: 32px;
+			font-size: 24px;
+			color: $wedge-white;
+			font-weight: normal;
+			margin: 0;
+			text-overflow: ellipsis;
+			width: 250px;
+			white-space: nowrap;
+			overflow: hidden;
+			margin-bottom: 4px;
+		}
+		&__subtitle {
+			font-size: 16px;
+			font-weight: normal;
+			color: white;
+			opacity: 0.5;
+			margin: 0;
+		}
+		&__time {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__more {
+			position: absolute;
+			top: 16px;
+			right: 8px;
+			display: flex;
+			align-items: center;
+
+			i {
+				font-size: 26px;
+				color: white;
+				margin-right: 6px;
+			}
+			.icon-more {
+				width: 32px;
+			}
+		}
+	}
+	& .item-content {
+		padding: 16px 24px;
+		.title {
+			font-size: 16px;
+			font-weight: normal;
+			color: $wedge-blue-gray;
+		}
+		.charts-container {
+			@extend .flex-row;
+			margin-top: 16px;
+			align-items: center;
+			.divider {
+				height: 60px;
+				width: 1px;
+				background-color: rgba(#bfbfbf, 0.55);
+			}
+			.utilization,
+			.threat,
+			.down {
+				flex: 1;
+				@extend .flex-column;
+				align-items: center;
+				p {
+					color: $wedge-blue-gray;
+					opacity: 0.75;
+					font-size: 12px;
+					font-weight: lighter;
+				}
+				.abs-container {
+					position: relative;
+					.value-container {
+						position: absolute;
+						top: 0;
+						width: 64px;
+						height: 48px;
+						display: flex;
+						justify-content: center;
+						align-content: center;
+						align-items: center;
+						&.circle {
+							width: 48px;
+						}
+						p.value {
+							color: $wedge-blue-gray;
+							font-size: 14px;
+							font-weight: normal;
+							line-height: 1;
+							margin-block-start: 0;
+							margin-block-end: 0;
+						}
+					}
+				}
+			}
+			.chart {
+				width: 64px;
+				height: 48px;
+				margin-bottom: 4px;
+
+				&.circle {
+					width: 48px;
+				}
+			}
+		}
+		.nsp__counter {
+			flex: 1;
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			p {
+				font-size: 34px;
+				font-weight: bold;
+				color: $wedge-blue-gray;
+			}
+		}
+		.nsp__container {
+			@extend .flex-row;
+			justify-content: flex-start;
+			align-content: center;
+			.empty {
+				flex: 1;
+			}
+		}
+		.nsp {
+			@extend .flex-column;
+			flex: 1;
+			text-align: center;
+			align-items: center;
+			&__image {
+				max-height: 56px;
+				max-width: 56px;
+				&-container {
+					@extend .centered-row;
+					justify-content: center;
+					margin-bottom: 8px;
+					height: 56px;
+					width: 56px;
+				}
+			}
+			&__name {
+				color: $wedge-blue-gray;
+				font-size: 13px;
+				font-weight: normal;
+			}
+		}
+	}
+	.divider {
+		height: 1px;
+		background-color: $wedge-text-green;
+	}
+	.owner-container {
+		display: flex;
+		justify-content: center;
+	}
+	.owner {
+		margin-top: 24px;
+		margin-bottom: 36px;
+		border: 1px rgba(#bfbfbf, 0.55) solid;
+		border-radius: 20px;
+		align-items: center;
+		@extend .flex-row;
+		.divider {
+			height: 32px;
+			width: 1px;
+			background-color: rgba(#bfbfbf, 0.55);
+		}
+		&__name {
+			color: $wedge-blue-gray;
+			margin: 4px 16px;
+			font-size: 14px;
+			width: 10em;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		&__icon {
+			color: $wedge-blue-gray;
+			margin: 4px 10px 4px 12px;
+			height: 14px;
+			width: 12px;
+		}
+	}
+}

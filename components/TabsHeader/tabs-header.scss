@@ -1,0 +1,36 @@
+@import '../../assets/sass/lbd/variables.scss';
+
+.tabs-header-container {
+	height: 70px;
+	width: 100%;
+	display: flex;
+	padding: 0 15px;
+	justify-content: center;
+
+	.single-tab-container {
+		cursor: pointer;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		font-family: 'OpenSans', sans-serif;
+		font-size: 18px;
+		line-height: 20px;
+		justify-content: center;
+		border-bottom: 1px solid $wedge-secondary-gray;
+		flex: 1 1 50px;
+		color: $wedge-primary-black;
+		&.--active {
+			color: $wedge-primary-blue;
+			border-bottom-color: $wedge-primary-blue;
+		}
+		.icon-container {
+			margin: 0 5px;
+		}
+	}
+}
+
+.--active {
+	&:before {
+		color: $wedge-primary-blue;
+	}
+}

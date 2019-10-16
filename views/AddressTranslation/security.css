@@ -1,0 +1,36 @@
+/*      light colors         */
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg); } }
+
+.policies .loader-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.policies__table-content {
+  margin-top: 16px;
+  min-width: 1100px; }
+
+.policies__search-bar {
+  margin-bottom: 32px; }

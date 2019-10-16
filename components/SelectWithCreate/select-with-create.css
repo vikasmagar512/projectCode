@@ -1,0 +1,74 @@
+.select-with-create {
+  border-bottom: 1px #ededed solid;
+  padding: 4px 0; }
+  .select-with-create .dropdown-menu {
+    width: fit-content;
+    min-width: 100%;
+    border-radius: 4px;
+    transition: none !important;
+    max-height: 140px;
+    overflow-y: scroll; }
+    .select-with-create .dropdown-menu > li:first-child > a {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .select-with-create .dropdown-menu .address-Icon {
+      height: 24px;
+      margin-left: 6px;
+      margin-right: 12px; }
+    .select-with-create .dropdown-menu .gateway-Icon {
+      width: 30px;
+      height: 18px;
+      margin-right: 7px; }
+    .select-with-create .dropdown-menu .group-Icon {
+      height: 20px;
+      margin-left: 5px;
+      margin-right: 12px; }
+    .select-with-create .dropdown-menu .imgContainer {
+      width: 40px;
+      text-align: center;
+      display: inline-block; }
+  .select-with-create .dropdown-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px transparent solid; }
+    .select-with-create .dropdown-toggle .input-no-border {
+      border: none; }
+    .select-with-create .dropdown-toggle p {
+      font-size: 14px; }
+    .select-with-create .dropdown-toggle:hover, .select-with-create .dropdown-toggle:focus {
+      background-color: transparent;
+      border-color: #f68b1e; }
+  .select-with-create.open .dropdown-toggle {
+    box-shadow: 0;
+    background-color: transparent;
+    border-color: #f68b1e; }
+    .select-with-create.open .dropdown-toggle:hover, .select-with-create.open .dropdown-toggle:focus {
+      box-shadow: 0;
+      background-color: transparent;
+      border-color: #f68b1e; }
+  .select-with-create .create-new {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px; }
+    .select-with-create .create-new .field-error-container {
+      flex: 1; }
+      .select-with-create .create-new .field-error-container input {
+        width: 150px; }
+    .select-with-create .create-new .save-button {
+      color: #36cb98;
+      font-size: 12px;
+      cursor: pointer; }
+      .select-with-create .create-new .save-button:disabled {
+        color: #888;
+        cursor: not-allowed; }
+    .select-with-create .create-new .error-text {
+      font-size: 10px;
+      color: red; }
+    .select-with-create .create-new .form__textinput {
+      margin: 0 8px 0 0;
+      padding: 2px; }

@@ -1,0 +1,14 @@
+/*      light colors         */
+.panel-success-container {
+  margin: 0;
+  padding: 10px 20px;
+  height: 60px;
+  background-color: #ecf7e7;
+  color: #62954a;
+  border-radius: 5px;
+  border: 1px solid rgba(98, 149, 74, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 400 16px/28px 'Roboto', sans-serif;
+  letter-spacing: -0.01em; }

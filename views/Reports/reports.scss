@@ -1,0 +1,126 @@
+@import '../../assets/sass/lbd/variables';
+@import '../../assets/sass/lbd/mixins';
+
+@mixin space-vertical($margin) {
+	margin-top: $margin;
+	margin-bottom: $margin;
+}
+.content {
+	&.reports {
+		margin-top: 110px;
+		padding: 48px 32px 6px 32px;
+		min-height: calc(100% - 141px);
+	}
+}
+.reports {
+	margin-top: 110px;
+	padding: 48px 32px 6px 32px;
+	min-height: calc(100% - 141px);
+	p {
+		line-height: 1;
+		margin: 0;
+	}
+	.loader-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__table-container {
+	}
+	&__table-content {
+		margin-top: 16px;
+		.report-items {
+			max-height: calc(100vh - 330px);
+			overflow-y: scroll;
+		}
+	}
+
+	&__more-button {
+		text-decoration: underline;
+		font-size: 12px;
+		text-align: center;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	&__search-bar {
+		margin-bottom: 32px;
+	}
+	&__filters {
+		display: flex;
+		align-items: center;
+		align-content: space-between;
+
+		@include respond-to($tablet-portrait) {
+			display: block;
+		}
+
+		.right-container {
+			display: flex;
+			flex: 1;
+			justify-content: flex-end;
+			align-items: center;
+
+			.refresh-button {
+				font-size: 16px;
+				margin-left: 8px;
+				cursor: pointer;
+				color: #636363;
+				&:hover {
+					color: #212121;
+				}
+			}
+
+			@include respond-to($tablet-portrait) {
+				justify-content: flex-start;
+				@include space-vertical(8px);
+			}
+
+			@include respond-to($phone) {
+				display: block;
+			}
+		}
+
+		.left-container {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			@include respond-to($phone) {
+				justify-content: center;
+			}
+		}
+
+		&-buttons {
+			margin-left: 32px;
+			.btn {
+				min-width: 80px;
+			}
+			@include respond-to($phone) {
+				display: flex;
+				margin-left: 0;
+				justify-content: center;
+			}
+		}
+
+		&-refresh {
+			display: flex;
+			align-items: center;
+			p {
+				margin-right: 8px;
+			}
+			.dropdown-toggle {
+				min-width: 120px;
+			}
+			.dropdown-menu {
+				min-width: 140px;
+			}
+
+			@include respond-to($phone) {
+				justify-content: center;
+				@include space-vertical(8px);
+			}
+		}
+	}
+}

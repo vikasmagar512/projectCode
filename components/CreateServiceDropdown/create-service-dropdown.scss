@@ -1,0 +1,107 @@
+@import '../../assets/sass/lbd/variables.scss';
+
+.service-with-create {
+	border-bottom: 1px #ededed solid;
+	padding: 4px 0;
+	.dropdown-menu {
+		width: fit-content;
+		min-width: 100%;
+		border-radius: 4px;
+		max-height: 176px;
+		overflow-y: scroll;
+
+		.add-new-service {
+			position: sticky;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+			background: white;
+		}
+	}
+	.dropdown-toggle {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border: 1px transparent solid;
+		.input-no-border {
+			border: none;
+		}
+		p {
+			font-size: 14px;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+			border-color: #f68b1e;
+		}
+	}
+	&.open {
+		.dropdown-toggle {
+			box-shadow: 0;
+			background-color: transparent;
+			border-color: #f68b1e;
+			&:hover,
+			&:focus {
+				box-shadow: 0;
+				background-color: transparent;
+				border-color: #f68b1e;
+			}
+		}
+	}
+	.create-service-form {
+		.create-form-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 12px 8px;
+
+			& span {
+				font-size: 16px;
+				font-weight: 600;
+				color: $wedge-blue-gray;
+			}
+			& i {
+				font-size: 14px;
+				color: $wedge-blue-gray;
+				cursor: pointer;
+			}
+		}
+		& form {
+			margin: 0;
+
+			.input-forms {
+				padding: 0 8px;
+			}
+			select,
+			input {
+				width: 100%;
+				font-size: 14px;
+				background: none;
+				border: none;
+				border-bottom: 1px solid #999;
+				margin: 4px 0;
+				padding: 6px 8px !important;
+
+				&::placeholder {
+					color: #ccc;
+				}
+			}
+			.create-servie-btn {
+				width: 100%;
+				background-color: $wedge-primary-blue;
+				color: white;
+				border: none;
+				font-size: 16px;
+				padding: 6px 0;
+				margin-top: 20px;
+			}
+			input[type='number']::-webkit-inner-spin-button,
+			input[type='number']::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+		}
+	}
+}

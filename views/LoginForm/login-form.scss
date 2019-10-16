@@ -1,0 +1,132 @@
+@import '../../assets/sass/lbd/variables.scss';
+@import '../../assets/sass/lbd/mixins.scss';
+
+.login-form-page {
+	&--content {
+		display: flex;
+		position: relative;
+		z-index: 4;
+		padding-top: 100px;
+		justify-content: center;
+
+		@media only screen and (max-width: 992px) {
+			padding-top: 32px;
+		}
+
+		.title {
+			font-size: 26px;
+			color: $wedge-blue-gray;
+			margin: 0 0 40px 0;
+			font-weight: 500;
+		}
+		.login-form {
+			width: 400px;
+
+			@media only screen and (max-width: 992px) {
+				width: 360px;
+			}
+
+			.input-container {
+				margin-bottom: 18px;
+				padding: 16px 16px;
+				background-color: white;
+				border: 1px solid #d0d4d6;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+			}
+			input {
+				flex: 1;
+				font-size: 18px;
+				color: $wedge-blue-gray;
+				border: 0;
+				margin-left: 16px;
+				&::placeholder {
+					color: #c5c8c9;
+				}
+			}
+			.icon-container {
+				width: 18px;
+				height: 18px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.input-icon {
+					max-height: 18px;
+					max-width: 18px;
+				}
+			}
+			.login-button {
+				cursor: pointer;
+				color: white;
+				padding: 16px;
+				background-color: $wedge-primary-blue;
+				border-radius: 3.8px;
+				font-size: 18px;
+				text-align: center;
+				margin: 0;
+				width: 100%;
+			}
+			.login-rememberme-container {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 40px;
+
+				.wedge-checkbox-container {
+					display: flex;
+					align-items: center;
+					margin-bottom: 0;
+				}
+				p,
+				span.title {
+					font-size: 14px;
+					color: $wedge-blue-gray;
+					margin: 0;
+					line-height: 25px;
+				}
+			}
+			.alert {
+				padding: 16px;
+				border-radius: 0.25rem;
+				margin-bottom: 24px;
+
+				&-danger {
+					background-color: #f2dede;
+					border: 1px solid #a94442;
+					color: #a94442;
+				}
+				&-warning {
+					background-color: #faebcc;
+					border: 1px solid #ffbc67;
+					color: #8a6d3b;
+				}
+			}
+			span.sign {
+				font-size: 16px;
+				line-height: 60px;
+				margin: 6px;
+
+				&-link {
+					color: $wedge-primary-green;
+				}
+			}
+		}
+	}
+
+	&--footer {
+		z-index: 1;
+		position: fixed;
+		bottom: 0;
+		.footer--image {
+			background-color: #f9f9f9;
+			width: 100%;
+			object-fit: contain;
+
+			@media only screen and (max-width: 992px) {
+				width: unset;
+				max-height: 50vh;
+			}
+		}
+	}
+}

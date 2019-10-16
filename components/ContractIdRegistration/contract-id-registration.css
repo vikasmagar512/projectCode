@@ -1,0 +1,175 @@
+/*      light colors         */
+.form-container-contract {
+  max-width: 726px;
+  padding: 50px 0 0 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+  .form-container-contract .col {
+    margin: 0 0 22px; }
+  .form-container-contract .container {
+    width: 100%; }
+  .form-container-contract label {
+    display: block; }
+  .form-container-contract .labelForm {
+    text-transform: uppercase;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6d8994;
+    letter-spacing: 0;
+    display: block;
+    margin: 0 0 13px;
+    font-weight: 600; }
+  .form-container-contract input[type='submit'] {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    background: #4a87c6;
+    margin-bottom: 200px; }
+  .form-container-contract input.inputField,
+  .form-container-contract .inputField {
+    background: #fff;
+    width: 100%;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #6d8994;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0;
+    height: 50px;
+    display: block;
+    border-radius: 3px;
+    border: solid 1px #d0d4d6; }
+    .form-container-contract input.inputField::-webkit-input-placeholder,
+    .form-container-contract .inputField::-webkit-input-placeholder {
+      color: #c5c8c9;
+      opacity: 0.9;
+      font-style: normal; }
+    .form-container-contract input.inputField:-moz-placeholder,
+    .form-container-contract .inputField:-moz-placeholder {
+      color: #c5c8c9;
+      opacity: 0.9;
+      font-style: normal; }
+    .form-container-contract input.inputField::-moz-placeholder,
+    .form-container-contract .inputField::-moz-placeholder {
+      color: #c5c8c9;
+      opacity: 0.9;
+      font-style: normal; }
+    .form-container-contract input.inputField:-ms-input-placeholder,
+    .form-container-contract .inputField:-ms-input-placeholder {
+      color: #c5c8c9;
+      opacity: 0.9;
+      font-style: normal; }
+  .form-container-contract .inputFieldDropdownHolder {
+    margin: 0; }
+  .form-container-contract .dropdown {
+    width: 100%;
+    margin: 0;
+    text-align: left; }
+    .form-container-contract .dropdown.open, .form-container-contract .dropdown.open:active {
+      background: #fff;
+      box-shadow: none; }
+      .form-container-contract .dropdown.open button,
+      .form-container-contract .dropdown.open button:active,
+      .form-container-contract .dropdown.open button:focus,
+      .form-container-contract .dropdown.open button:hover, .form-container-contract .dropdown.open:active button,
+      .form-container-contract .dropdown.open:active button:active,
+      .form-container-contract .dropdown.open:active button:focus,
+      .form-container-contract .dropdown.open:active button:hover {
+        box-shadow: none;
+        background: #fff; }
+    .form-container-contract .dropdown .dropdown-menu {
+      width: 100%;
+      max-height: 240px;
+      overflow-x: hidden; }
+      .form-container-contract .dropdown .dropdown-menu li {
+        font-family: 'OpenSans', sans-serif;
+        font-size: 18px;
+        line-height: 20px; }
+        .form-container-contract .dropdown .dropdown-menu li a {
+          color: #6d8994;
+          white-space: normal; }
+    .form-container-contract .dropdown .inputFieldDropdown {
+      max-width: 100%;
+      background: #fff;
+      text-align: left;
+      width: 100%;
+      font-family: 'OpenSans', sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #6d8994;
+      box-sizing: border-box;
+      padding: 0 15px;
+      border: solid 1px #d0d4d6;
+      margin: 0;
+      border-radius: 2px;
+      height: 49px;
+      display: block;
+      white-space: normal; }
+      .form-container-contract .dropdown .inputFieldDropdown .caret {
+        position: absolute;
+        top: 50%;
+        margin: -3px 0 0 0;
+        right: 10px; }
+  .form-container-contract .inputField {
+    padding: 14px 15px; }
+  .form-container-contract .countrySelect .country-label {
+    font-size: 18px; }
+  .form-container-contract .countrySelect .flag-options {
+    margin: 13px 31px 0px -15px;
+    width: 100%;
+    padding: 14px 15px 10px 15px; }
+    .form-container-contract .countrySelect .flag-options .filterBox input {
+      margin: 0 4% 0% 2%; }
+    .form-container-contract .countrySelect .flag-options .flag-option .country-flag {
+      display: flex;
+      align-items: center;
+      width: 100% !important; }
+      .form-container-contract .countrySelect .flag-options .flag-option .country-flag img {
+        top: 0px;
+        height: auto; }
+    .form-container-contract .countrySelect .flag-options .flag-option.has-label {
+      padding: 8px 20px 8px 8px;
+      margin: 5px 0px;
+      white-space: unset; }
+  .form-container-contract .countrySelect .selected--flag--option {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between; }
+    .form-container-contract .countrySelect .selected--flag--option .country-flag {
+      height: auto !important;
+      width: 100% !important;
+      max-width: 90%;
+      position: relative;
+      display: block; }
+      .form-container-contract .countrySelect .selected--flag--option .country-flag .country-label {
+        font-size: 18px; }
+      .form-container-contract .countrySelect .selected--flag--option .country-flag img {
+        top: -2px;
+        height: auto; }
+    .form-container-contract .countrySelect .selected--flag--option .arrow-down {
+      float: right;
+      margin-top: -2px; }
+
+.StripeElement {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  background: red;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease; }

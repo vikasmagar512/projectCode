@@ -1,0 +1,27 @@
+/*      light colors         */
+.tabs-header-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  padding: 0 15px;
+  justify-content: center; }
+  .tabs-header-container .single-tab-container {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    justify-content: center;
+    border-bottom: 1px solid #dfe9ea;
+    flex: 1 1 50px;
+    color: #333333; }
+    .tabs-header-container .single-tab-container.--active {
+      color: #4986c5;
+      border-bottom-color: #4986c5; }
+    .tabs-header-container .single-tab-container .icon-container {
+      margin: 0 5px; }
+
+.--active:before {
+  color: #4986c5; }

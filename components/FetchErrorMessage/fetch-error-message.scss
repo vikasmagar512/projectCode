@@ -1,0 +1,44 @@
+@import '../../assets/sass/lbd/variables.scss';
+
+.fetch-error-message {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	right: 50%;
+	transform: translate(50%, 0);
+	padding: 8px 16px;
+	background-color: #f2dede;
+	border: 1px solid #a94442;
+	color: #a94442;
+	padding: 16px;
+	border-radius: 2px;
+	i {
+		font-size: 24px;
+	}
+	&--container {
+		width: 640px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&--text {
+		font-size: 14px;
+		font-weight: 400;
+	}
+	&--code {
+		margin: 0 8px;
+		font-size: 15px;
+		font-weight: 600;
+	}
+	&--help {
+		color: $wedge-primary-blue;
+		cursor: pointer;
+		font-weight: 600;
+	}
+	& .d-flex {
+		display: flex;
+	}
+	& .divider {
+		margin: 0 8px;
+	}
+}

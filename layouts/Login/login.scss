@@ -1,0 +1,132 @@
+@import '../../assets/sass/lbd/variables.scss';
+@import '../../assets/sass/lbd/mixins.scss';
+
+.login-page {
+	position: relative;
+	background-color: #f9f9f9;
+	min-height: 100vh;
+
+	&--header {
+		position: relative;
+		z-index: 4;
+		height: 110px;
+		margin: 0px 64px;
+		border-bottom: 1px solid #d0d5d8;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media only screen and (max-width: 992px) {
+			margin: 0 24px;
+		}
+
+		img.logo {
+			width: 123px;
+		}
+		.button {
+			border: 1px solid $wedge-blue-gray;
+			color: $wedge-blue-gray;
+			font-size: 18px;
+			text-align: center;
+			padding: 16px 24px;
+			border-radius: 3.8px;
+			cursor: pointer;
+			@include transition(0.25s, null);
+			&:hover {
+				background-color: lighten($wedge-blue-gray, 40);
+			}
+		}
+	}
+
+	&--content {
+		display: flex;
+		position: relative;
+		z-index: 4;
+		padding-top: 100px;
+		justify-content: center;
+
+		@media only screen and (max-width: 992px) {
+			padding-top: 32px;
+		}
+
+		.title {
+			font-size: 26px;
+			color: $wedge-blue-gray;
+			margin: 0 0 24px 0;
+		}
+		.login-form {
+			width: 400px;
+
+			@media only screen and (max-width: 992px) {
+				width: 360px;
+			}
+
+			.input-container {
+				margin-bottom: 24px;
+				padding: 16px 16px;
+				background-color: white;
+				border: 1px solid #d0d4d6;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+			}
+			input {
+				flex: 1;
+				font-size: 18px;
+				color: $wedge-blue-gray;
+				border: 0;
+				margin-left: 16px;
+				&::placeholder {
+					color: #c5c8c9;
+				}
+			}
+			.icon-container {
+				width: 18px;
+				height: 18px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.input-icon {
+					max-height: 18px;
+					max-width: 18px;
+				}
+			}
+			.login-button {
+				cursor: pointer;
+				color: white;
+				padding: 16px;
+				background-color: $wedge-primary-blue;
+				border-radius: 3.8px;
+				font-size: 18px;
+				text-align: center;
+				margin: 0;
+				width: 100%;
+			}
+			.alert-danger {
+				background-color: #f2dede;
+				border: 1px solid #a94442;
+				color: #a94442;
+				padding: 16px;
+				border-radius: 0.25rem;
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+	&--footer {
+		@include transition(0.5s, $transition-ease);
+		z-index: 1;
+		position: fixed;
+		bottom: 0;
+		.footer--image {
+			background-color: #f9f9f9;
+			width: 100%;
+			object-fit: contain;
+
+			@media only screen and (max-width: 992px) {
+				width: unset;
+				max-height: 50vh;
+			}
+		}
+	}
+}

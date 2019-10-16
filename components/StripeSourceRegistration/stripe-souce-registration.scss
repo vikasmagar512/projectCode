@@ -1,0 +1,251 @@
+@import '../../assets/sass/lbd/variables.scss';
+
+.signUp-registration {
+	.form-container-stripe {
+		max-width: 726px;
+		padding: 50px 0 0 0;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+
+		.col {
+			margin: 0 0 22px;
+		}
+
+		.container {
+			width: 100%;
+		}
+
+		label {
+			display: block;
+		}
+
+		.labelForm {
+			text-transform: uppercase;
+			font-family: 'OpenSans', sans-serif;
+			font-size: 14px;
+			line-height: 16px;
+			color: $wedge-blue-gray;
+			letter-spacing: 0;
+			display: block;
+			margin: 0 0 13px;
+			font-weight: 600;
+		}
+
+		input[type='submit'] {
+			display: block;
+			width: 100%;
+			height: 50px;
+			margin: 0;
+			border-radius: 3px;
+			color: #fff;
+			font-family: 'OpenSans', sans-serif;
+			font-size: 18px;
+			line-height: 20px;
+			background: #4a87c6;
+		}
+
+		input.inputField,
+		.inputField {
+			background: #fff;
+			width: 100%;
+			font-family: 'OpenSans', sans-serif;
+			font-size: 18px;
+			line-height: 20px;
+			font-weight: 400;
+			color: $wedge-blue-gray;
+			box-sizing: border-box;
+			padding: 0 15px;
+			margin: 0;
+			height: 50px;
+			display: block;
+			border-radius: 3px;
+			border: solid 1px #d0d4d6;
+
+			&::-webkit-input-placeholder {
+				color: #c5c8c9;
+				opacity: 0.9;
+				font-style: normal;
+			}
+
+			&:-moz-placeholder {
+				color: #c5c8c9;
+				opacity: 0.9;
+				font-style: normal;
+			}
+
+			&::-moz-placeholder {
+				color: #c5c8c9;
+				opacity: 0.9;
+				font-style: normal;
+			}
+
+			&:-ms-input-placeholder {
+				color: #c5c8c9;
+				opacity: 0.9;
+				font-style: normal;
+			}
+		}
+
+		.inputFieldDropdownHolder {
+			margin: 0;
+		}
+
+		.dropdown {
+			width: 100%;
+			margin: 0;
+			text-align: left;
+
+			&.open,
+			&.open:active {
+				background: #fff;
+				box-shadow: none;
+
+				button,
+				button:active,
+				button:focus,
+				button:hover {
+					box-shadow: none;
+					background: #fff;
+				}
+			}
+
+			.dropdown-menu {
+				width: 100%;
+				max-height: 240px;
+				overflow-x: hidden;
+
+				li {
+					font-family: 'OpenSans', sans-serif;
+					font-size: 18px;
+					line-height: 20px;
+
+					a {
+						color: $wedge-blue-gray;
+						white-space: normal;
+					}
+				}
+			}
+
+			.inputFieldDropdown {
+				max-width: 100%;
+				background: #fff;
+				text-align: left;
+				width: 100%;
+				font-family: 'OpenSans', sans-serif;
+				font-size: 18px;
+				line-height: 20px;
+				font-weight: 400;
+				color: $wedge-blue-gray;
+				box-sizing: border-box;
+				padding: 0 15px;
+				border: solid 1px #d0d4d6;
+				margin: 0;
+				border-radius: 2px;
+				height: 49px;
+				display: block;
+				white-space: normal;
+
+				.caret {
+					position: absolute;
+					top: 50%;
+					margin: -3px 0 0 0;
+					right: 10px;
+				}
+			}
+		}
+
+		.inputField {
+			padding: 14px 15px;
+		}
+
+		.submit-container {
+			margin-bottom: 100px;
+		}
+
+		.countrySelect {
+			& .country-label {
+				font-size: 18px;
+			}
+
+			.flag-options {
+				margin: 13px 31px 0px -15px;
+				width: 100%;
+				padding: 14px 15px 10px 15px;
+
+				& .filterBox input {
+					margin: 0 4% 0% 2%;
+				}
+
+				& .flag-option {
+					.country-flag {
+						display: flex;
+						align-items: center;
+						width: 100% !important;
+
+						img {
+							top: 0px;
+							height: auto;
+						}
+					}
+
+					&.has-label {
+						padding: 8px 20px 8px 8px;
+						margin: 5px 0px;
+						white-space: unset;
+					}
+				}
+			}
+
+			.selected--flag--option {
+				font-size: 16px;
+				display: flex;
+				justify-content: space-between;
+
+				& .country-flag {
+					height: auto !important;
+					width: 100% !important;
+					max-width: 90%;
+					position: relative;
+					display: block;
+
+					& .country-label {
+						font-size: 18px;
+					}
+
+					img {
+						top: -2px;
+						height: auto;
+					}
+				}
+
+				& .arrow-down {
+					float: right;
+					margin-top: -2px;
+				}
+			}
+		}
+	}
+
+	.StripeElement {
+		box-sizing: border-box;
+
+		height: 40px;
+
+		padding: 10px 12px;
+
+		background: red;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		background-color: white;
+
+		box-shadow: 0 1px 3px 0 #e6ebf1;
+		-webkit-transition: box-shadow 150ms ease;
+		transition: box-shadow 150ms ease;
+	}
+
+	.menu-item_overflow_hidden {
+		overflow-x: hidden;
+	}
+}

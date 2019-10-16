@@ -1,0 +1,269 @@
+.flex-row, .centered-row {
+  display: flex;
+  flex-direction: row; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.flex-column-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.centered-row {
+  align-items: center; }
+
+.stretch {
+  flex: 1;
+  justify-content: space-between; }
+
+.baseline {
+  align-items: baseline; }
+
+.center {
+  align-items: center; }
+
+.space-left {
+  margin-left: 16px; }
+
+.space-above {
+  margin-top: 16px; }
+
+.space-above-8 {
+  margin-top: 8px; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.component-coming-soon.hidden {
+  visibility: collapse; }
+
+.table-item, .reports-table-item.item {
+  background-color: white;
+  border-radius: 4px;
+  border: 0.5px solid #ebebeb;
+  padding: 24px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  @media only screen and (max-width: 992px) {
+    .table-item, .reports-table-item.item {
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px; } }
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  min-height: 75vh; }
+  .coming-soon img {
+    width: 512px; }
+    @media only screen and (max-width: 992px) {
+      .coming-soon img {
+        width: 320px; } }
+
+.component-coming-soon {
+  opacity: 0.33 !important; }
+  .component-coming-soon * {
+    pointer-events: none; }
+
+@keyframes slideLeftAndRight {
+  0% {
+    transform: translateX(0); }
+  25% {
+    transform: translateX(-20px); }
+  50% {
+    transform: translateX(0); }
+  75% {
+    transform: translateX(20px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; }
+  100% {
+    opacity: 1; } }
+
+.animate-flicker {
+  animation-duration: 1.5s;
+  animation-name: flickerAnimation;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out; }
+
+.slow-shake {
+  animation-duration: 1.5s;
+  animation-name: slideLeftAndRight;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out; }
+
+.reports-table-item.item {
+  align-items: flex-start; }
+  .reports-table-item.item.hover .field__stats {
+    opacity: 1;
+    transition: 300ms ease; }
+  .reports-table-item.item.hover .field__source .imgDiv, .reports-table-item.item.hover .field__destination .imgDiv {
+    opacity: 1;
+    transition: 300ms ease; }
+  .reports-table-item.item p {
+    word-break: break-all; }
+  .reports-table-item.item .vertical-divider {
+    width: 1px;
+    background-color: #dedede; }
+    .reports-table-item.item .vertical-divider--big {
+      height: 40px;
+      margin-right: 0; }
+  .reports-table-item.item .field {
+    flex: 1;
+    align-content: center;
+    font-size: 12px;
+    color: #6d8994;
+    padding-right: 10px; }
+    @media only screen and (max-width: 992px) {
+      .reports-table-item.item .field {
+        width: 100%;
+        flex: auto;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center;
+        display: flex;
+        margin-bottom: 12px; }
+        .reports-table-item.item .field__title {
+          font-weight: bold;
+          font-size: 12px;
+          text-transform: uppercase; }
+        .reports-table-item.item .field__content {
+          display: flex;
+          align-items: center; }
+        .reports-table-item.item .field__actions .field__content {
+          flex-direction: column; } }
+    .reports-table-item.item .field p {
+      font-weight: 600;
+      /*&.medium {
+            font-size: 14px;
+        }*/ }
+      .reports-table-item.item .field p.normal {
+        font-size: 16px; }
+      .reports-table-item.item .field p.strong {
+        font-weight: bold; }
+      .reports-table-item.item .field p.top {
+        margin-bottom: 5px; }
+    .reports-table-item.item .field .small {
+      font-size: 12px; }
+      @media only screen and (max-width: 992px) {
+        .reports-table-item.item .field .small {
+          font-size: 12px; } }
+    .reports-table-item.item .field .light {
+      font-weight: normal; }
+    .reports-table-item.item .field .medium {
+      font-size: 14px; }
+    .reports-table-item.item .field__policy {
+      display: flex;
+      flex-direction: column; }
+      .reports-table-item.item .field__policy .timezone .marTop {
+        margin-top: 2px; }
+      .reports-table-item.item .field__policy .ips {
+        display: flex;
+        align-items: baseline; }
+        .reports-table-item.item .field__policy .ips .left {
+          width: 30%;
+          text-align: right; }
+        .reports-table-item.item .field__policy .ips .time {
+          padding-left: 5px; }
+      .reports-table-item.item .field__policy .imgDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .reports-table-item.item .field__policy .imgDiv p {
+          margin-left: 5px;
+          margin-bottom: 0; }
+    .reports-table-item.item .field__alert {
+      display: flex;
+      justify-content: flex-start; }
+    .reports-table-item.item .field__source, .reports-table-item.item .field__destination {
+      flex: 1.25 0; }
+      .reports-table-item.item .field__source .fqdn, .reports-table-item.item .field__destination .fqdn {
+        align-items: flex-end;
+        margin-top: 15px; }
+        .reports-table-item.item .field__source .fqdn p, .reports-table-item.item .field__destination .fqdn p {
+          font-weight: normal; }
+      .reports-table-item.item .field__source .imgDiv, .reports-table-item.item .field__destination .imgDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        opacity: 0.5;
+        margin-top: 15px; }
+        .reports-table-item.item .field__source .imgDiv .imageP, .reports-table-item.item .field__destination .imgDiv .imageP {
+          margin-right: 5px;
+          padding-top: 5px; }
+          .reports-table-item.item .field__source .imgDiv .imageP .code, .reports-table-item.item .field__destination .imgDiv .imageP .code {
+            margin-left: 4px; }
+        .reports-table-item.item .field__source .imgDiv .top, .reports-table-item.item .field__destination .imgDiv .top {
+          margin-left: 5px;
+          margin-bottom: 0; }
+    .reports-table-item.item .field__service, .reports-table-item.item .field__application {
+      text-transform: capitalize;
+      display: flex;
+      align-items: center; }
+    .reports-table-item.item .field__alert {
+      display: flex;
+      align-items: center; }
+    .reports-table-item.item .field__actions {
+      display: flex;
+      flex-direction: column;
+      flex: 0.75 0; }
+      .reports-table-item.item .field__actions .action {
+        display: flex;
+        align-items: center; }
+    .reports-table-item.item .field__service, .reports-table-item.item .field__application, .reports-table-item.item .field__actions, .reports-table-item.item .field__alert {
+      margin-top: -2px; }
+    .reports-table-item.item .field__stats {
+      display: flex;
+      flex-direction: column;
+      flex: 1.5 0;
+      opacity: 0.5; }
+      .reports-table-item.item .field__stats .marBottom {
+        margin-bottom: 5px; }
+      .reports-table-item.item .field__stats .divider {
+        justify-content: center;
+        flex-direction: row; }
+        .reports-table-item.item .field__stats .divider .line {
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          width: 2px;
+          margin-right: 5px;
+          margin-left: 3px; }
+        .reports-table-item.item .field__stats .divider .bytes {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex: 1 1;
+          padding-right: 1px; }
+          .reports-table-item.item .field__stats .divider .bytes img {
+            width: 16px;
+            height: 16px; }
+          .reports-table-item.item .field__stats .divider .bytes.bottom {
+            align-self: center; }
+          .reports-table-item.item .field__stats .divider .bytes p {
+            white-space: pre-wrap;
+            word-break: keep-all; }
+    .reports-table-item.item .field .fakeCenter {
+      margin-left: 25%; }
+  .reports-table-item.item .small-icon {
+    height: 20px;
+    width: 20px;
+    margin: 0px 4px 0px 0px; }
+  .reports-table-item.item .drop-icon {
+    height: 12px;
+    width: 9px;
+    margin: 0px 4px 0px 0px; }
+  .reports-table-item.item .secondRow {
+    margin-top: 10px;
+    display: flex; }

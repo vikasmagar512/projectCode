@@ -1,0 +1,65 @@
+@import '../../assets/sass/lbd/variables';
+@import '../../assets/sass/common.scss';
+.ReactModal__Overlay--after-open {
+	overflow-y: auto;
+}
+.ReactModal__Content--after-open {
+	transform: translate(-50%, 0%) !important;
+	top: 20px !important;
+}
+.wedge-modal {
+	overflow-y: auto;
+
+	&__header {
+		width: 100%;
+		z-index: 10001;
+		background-color: $wedge-primary-color;
+		padding: 24px 32px;
+		color: white;
+		@media only screen and (max-width: 992px) {
+			padding: 16px;
+		}
+	}
+
+	&__content {
+		background-color: #f7f7f7;
+		overflow-y: hidden;
+	}
+
+	&__footer {
+		background-color: #efefef;
+		border-top: 1px #d7dadb solid;
+		padding: 24px 32px;
+		@media only screen and (max-width: 992px) {
+			padding: 16px;
+		}
+	}
+
+	.header {
+		@extend .flex-row;
+		align-items: center;
+		justify-content: space-between;
+		&__title {
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		&__actions-container {
+			display: flex;
+			align-items: center;
+		}
+
+		&__action {
+			font-size: 24px;
+			font-weight: normal;
+			cursor: pointer;
+			margin-right: 16px;
+		}
+
+		&__close {
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+		}
+	}
+}

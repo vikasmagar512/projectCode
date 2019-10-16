@@ -1,0 +1,144 @@
+/*      light colors         */
+.orgInfo-form {
+  display: flex;
+  padding: 36px 0;
+  justify-content: center;
+  flex-direction: column; }
+  .orgInfo-form .error-msg {
+    color: red;
+    position: absolute;
+    top: -25px; }
+  .orgInfo-form .form-container {
+    width: 100%;
+    position: relative; }
+    .orgInfo-form .form-container label {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      margin-bottom: 18px; }
+      .orgInfo-form .form-container label .labelForm {
+        margin-bottom: 8px;
+        color: #4a87c6;
+        text-transform: uppercase; }
+      .orgInfo-form .form-container label .inputField {
+        padding: 0 12px;
+        height: 48px;
+        font-size: 18px;
+        font-weight: normal;
+        border-radius: 3px;
+        border: 1px solid #ccc; }
+        .orgInfo-form .form-container label .inputField::placeholder {
+          color: #ccc; }
+    .orgInfo-form .form-container .title {
+      font-weight: 500;
+      color: #76888f; }
+    .orgInfo-form .form-container .divider {
+      width: 100%;
+      height: 1px;
+      margin-bottom: 24px;
+      background-color: #76888f; }
+    .orgInfo-form .form-container .password-form .row {
+      position: relative; }
+      .orgInfo-form .form-container .password-form .row .error-msg {
+        left: 15px; }
+  .orgInfo-form .countrySelect {
+    padding: 10px 15px !important;
+    background: #fff; }
+    .orgInfo-form .countrySelect .country-label {
+      font-size: 18px; }
+    .orgInfo-form .countrySelect .flag-options {
+      margin: 13px 31px 0px -15px;
+      width: 100%;
+      padding: 14px 15px 10px 10px; }
+      .orgInfo-form .countrySelect .flag-options .filterBox input {
+        margin: 0 4% 0% 2%;
+        flex: 1 1;
+        font-size: 18px;
+        color: #6d8994;
+        border: 0;
+        margin-left: 8px; }
+      .orgInfo-form .countrySelect .flag-options .flag-option .country-flag {
+        display: flex;
+        align-items: center;
+        width: 100% !important; }
+        .orgInfo-form .countrySelect .flag-options .flag-option .country-flag img {
+          top: 0px;
+          height: auto; }
+      .orgInfo-form .countrySelect .flag-options .flag-option.has-label {
+        padding: 8px 20px 8px 8px;
+        margin: 5px 0px;
+        white-space: unset; }
+    .orgInfo-form .countrySelect .selected--flag--option {
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px; }
+      .orgInfo-form .countrySelect .selected--flag--option .country-flag {
+        height: auto !important;
+        width: 100% !important;
+        max-width: 90%;
+        position: relative;
+        display: block; }
+        .orgInfo-form .countrySelect .selected--flag--option .country-flag .country-label {
+          font-size: 18px; }
+        .orgInfo-form .countrySelect .selected--flag--option .country-flag img {
+          top: -2px;
+          height: auto; }
+      .orgInfo-form .countrySelect .selected--flag--option .arrow-down {
+        float: right;
+        margin-top: -2px; }
+  .orgInfo-form .inputFieldDropdownHolder {
+    margin: 0; }
+  .orgInfo-form .dropdown {
+    width: 100%;
+    margin: 0;
+    text-align: left; }
+    .orgInfo-form .dropdown.open, .orgInfo-form .dropdown.open:active {
+      background: #fff;
+      box-shadow: none; }
+      .orgInfo-form .dropdown.open button,
+      .orgInfo-form .dropdown.open button:active,
+      .orgInfo-form .dropdown.open button:focus,
+      .orgInfo-form .dropdown.open button:hover, .orgInfo-form .dropdown.open:active button,
+      .orgInfo-form .dropdown.open:active button:active,
+      .orgInfo-form .dropdown.open:active button:focus,
+      .orgInfo-form .dropdown.open:active button:hover {
+        box-shadow: none;
+        background: #fff; }
+    .orgInfo-form .dropdown .dropdown-menu {
+      width: 100%;
+      max-height: 240px;
+      overflow-x: hidden; }
+      .orgInfo-form .dropdown .dropdown-menu li {
+        font-family: 'OpenSans', sans-serif;
+        font-size: 18px;
+        line-height: 20px; }
+        .orgInfo-form .dropdown .dropdown-menu li a {
+          color: #6d8994;
+          white-space: normal; }
+    .orgInfo-form .dropdown .inputFieldDropdown {
+      max-width: 100%;
+      background: #fff;
+      text-align: left;
+      width: 100%;
+      font-family: 'OpenSans', sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #6d8994;
+      box-sizing: border-box;
+      padding: 0 15px;
+      border: solid 1px #d0d4d6;
+      margin: 0;
+      border-radius: 2px;
+      height: 49px;
+      display: block;
+      white-space: normal; }
+      .orgInfo-form .dropdown .inputFieldDropdown .caret {
+        position: absolute;
+        top: 50%;
+        margin: -3px 0 0 0;
+        right: 10px; }
+  .orgInfo-form .menu-item_overflow_hidden {
+    overflow-x: hidden; }

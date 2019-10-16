@@ -1,0 +1,21 @@
+.ecosystems {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 80%;
+  margin: 32px auto; }
+  .ecosystems-error-container {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center; }
+  .ecosystems::after {
+    content: '';
+    max-height: 1px;
+    width: 764px; }
+
+.refresh-button {
+  position: fixed;
+  bottom: 8px;
+  right: 8px; }

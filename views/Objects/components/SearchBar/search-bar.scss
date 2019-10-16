@@ -1,0 +1,38 @@
+$bar-height: 48px;
+
+.search-bar {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	border-radius: 2px;
+	border: 1px solid #ebebeb;
+	height: $bar-height;
+	.dropdown-toggle {
+		min-width: 128px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: $bar-height;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.small-icon {
+		font-size: 20px;
+		text-align: center;
+		margin-left: 16px;
+		color: #afafaf;
+	}
+
+	input {
+		flex: 1;
+		border: 0;
+		color: #a1a1a1;
+		font-size: 18px;
+		margin-left: 16px;
+	}
+
+	input::placeholder {
+		color: #afafaf;
+	}
+}
